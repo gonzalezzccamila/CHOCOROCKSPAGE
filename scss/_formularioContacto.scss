@@ -1,0 +1,55 @@
+/*FORMULARIO*/
+.formulario{
+	background: url(media/backgr.jpeg) no-repeat center;
+	background-size: cover;
+	padding: $alto;
+}
+.formulario h1{
+	text-align: center;
+	color: #FFFFFF
+}
+.formulario__linea{
+	width: 100px;
+	height: $alto/4;
+	background:$navyblue;
+	margin: 10px auto;
+}
+.formulario__contacto{
+	max-width: 600px;
+	margin: auto;
+	padding:0 10px;
+	overflow: hidden;
+}
+.formulario__etiquetas{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin:16px 0;
+	border:0;
+	background-color: #2F2536;
+	padding: 20px 40px;
+	outline: none;	
+	color: white;
+	transition: .4s;
+}
+.formulario__etiquetas:focus{
+	box-shadow: 0 0 10px 4px white;
+}
+textarea.formulario__etiquetas{
+	resize:none;
+	height:$alto*3;
+}
+.formulario__boton{
+	float:right;
+	border: 0;
+	background: $navyblue;
+	color: black;
+	padding: 12px 50px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .5s
+}
+.formulario__boton:hover{
+	background: #491F5B;
+	color: white;
+}

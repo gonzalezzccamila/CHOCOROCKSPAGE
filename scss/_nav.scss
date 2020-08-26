@@ -1,0 +1,46 @@
+/*MENU BARRA*/
+
+.nav{
+	height: 200px;
+	background-color: $navyblue;
+}
+.nav__img{
+	position: absolute;
+	top:16px;
+	left: 12%;
+}
+.nav__items{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	float: right;
+	margin-right: 25px;
+	margin-top: 30px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: $alto*2;
+	margin: 0 15px;
+}
+nav ul li a{
+	position: relative;
+	color: white;
+	font-size:18px;
+	padding: 5PX;
+	text-transform:uppercase;
+}
+nav ul li a:before{
+	position:absolute;
+	content: '';
+	left:0;
+	bottom:0;
+	height:3px;
+	width:100%;
+	background:white;
+	transform:scaleX(0);
+	transform-origin:right;
+	transition: transform .3s linear;
+}
+nav ul li a:hover:before{
+	transform:scaleX(1);
+	transform-origin: left;
+}

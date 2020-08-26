@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+/*MENU BARRA*/
+.nav {
+  height: 200px;
+  background-color: #425460; }
+
+.nav__img {
+  position: absolute;
+  top: 16px;
+  left: 12%; }
+
+.nav__items {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  float: right;
+  margin-right: 25px;
+  margin-top: 30px; }
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px; }
+
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  padding: 5PX;
+  text-transform: uppercase; }
+
+nav ul li a:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s linear; }
+
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left; }
+
+/*PRODUCTOS*/
+.nuestrosProductos {
+  background: #ECEBEB; }
+
+.nuestrosProductos__titulo {
+  margin-bottom: 10px;
+  color: #313131;
+  text-align: center; }
+
+.nuestrosProductos_section {
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px; }
+
+.nuestrosProductos_section--items {
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ddd; }
+
+.nuestrosProductos_section--img {
+  margin-top: 5px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 0.9;
+  transition: 0.3s ease;
+  cursor: pointer; }
+
+.nuestrosProductos_section--img:hover {
+  opacity: 1;
+  transform: scale(1.5, 1.5); }
+
+.nuestrosProductos_section--items > .nuestrosProductos_section--titulo {
+  font-size: 20px;
+  font-weight: bold; }
+
+.nuestrosProductos_section--boton {
+  outline: none;
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px 0; }
+
+/*elementos alineados*/
+.boxgrande {
+  font-family: 'Abril Fatface', cursive;
+  text-align: right;
+  font-size: 30px;
+  float: right; }
+
+.elementosAlineados {
+  display: inline-block;
+  width: 100%;
+  margin-right: 3rem;
+  margin-top: 1rem; }
+
+/*FORMULARIO*/
+.formulario {
+  background: url(media/backgr.jpeg) no-repeat center;
+  background-size: cover;
+  padding: 40px; }
+
+.formulario h1 {
+  text-align: center;
+  color: #FFFFFF; }
+
+.formulario__linea {
+  width: 100px;
+  height: 10px;
+  background: #425460;
+  margin: 10px auto; }
+
+.formulario__contacto {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden; }
+
+.formulario__etiquetas {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background-color: #2F2536;
+  padding: 20px 40px;
+  outline: none;
+  color: white;
+  transition: .4s; }
+
+.formulario__etiquetas:focus {
+  box-shadow: 0 0 10px 4px white; }
+
+textarea.formulario__etiquetas {
+  resize: none;
+  height: 120px; }
+
+.formulario__boton {
+  float: right;
+  border: 0;
+  background: #425460;
+  color: black;
+  padding: 12px 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .5s; }
+
+.formulario__boton:hover {
+  background: #491F5B;
+  color: white; }
+
+/*FOOTER*/
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top: 10px; }
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s; }
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none; }
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF; }
+
+.footer-middle {
+  padding-top: 2em;
+  color: white; }
